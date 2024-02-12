@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Patient SignUp</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <center>
+                <font color="orange">
+                       Apollo hospital
+                </font>
+            </center>
+        </h1>
+       <p align="right">
+        <a href="#">About Apollo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Apollo Branches.html">Apollo Branches</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Apollo services.html">Apollo Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Apollo contact.html">Apollo Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Doctors.html">Doctors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Labs.html">Labs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Doctor Registration.html">Doctor Registration</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Doctor Login.html">Doctor Login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="patient registration.html">Patient Registration</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="patient loging.html">Patient Login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+    </header>
+    <hr>
+
+  <!-- form start -->
+  <form action="patientreg" method="post" name="preg">
+    <!-- table start -->
+    <table align="center" bgcolor="#dcdbda" cellspacing="10px">
+
+      <caption>
+        <h2>Patient Registration Form</h2>
+      </caption>
+
+      <!-- name -->
+      <tr>
+        <td>
+          <label for="fname">Pateint's Name:</label>
+        </td>
+        <td>
+          <input type="text" name="fname" id="fname" placeholder="First Name">
+        </td>
+        <td>
+          <input type="text" name="lname" id="lname" placeholder="Last Name">
+        </td>
+      </tr>
+
+      <!-- username -->
+      <tr>
+        <td>
+          <label for="username">Username:</label>
+        </td>
+        <td>
+          <input type="text" name="username" id="username" placeholder="Username">
+        </td>
+      </tr>
+
+      <!-- gender -->
+      <tr>
+        <td>
+          <label for="gender">Gender:</label>
+        </td>
+        <td>
+          <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+        </td>
+      </tr>
+
+
+      <!-- dob -->
+      <tr>
+        <td><label for="dob">Date of Birth:</label></td>
+        <td>
+          <input type="date" name="dob" id="dob">
+        </td>
+      </tr>
+
+      <!-- marital status -->
+      <tr>
+        <td><label for="mstatus">Marital Status:</label></td>
+        <td colspan="2">
+          <input type="radio" name="mstatus" id="mstatus1" value="single"><label for="mstatus1">Single</label>
+          <input type="radio" name="mstatus" id="mstatus2" value="married"><label for="mstatus2">Married</label>
+          <input type="radio" name="mstatus" id="mstatus3" value="divorced"><label for="mstatus3">Divorced</label>
+          <input type="radio" name="mstatus" id="mstatus4" value="widow"><label for="mstatus4">Widow</label>
+        </td>
+      </tr>
+
+      <!-- email -->
+      <tr>
+        <td>
+          <label for="email">E-Mail:</label>
+        </td>
+        <td>
+          <input type="email" name="email" id="email" placeholder="Email Id">
+        </td>
+      </tr>
+
+      <!-- mobile -->
+      <tr>
+        <td>
+          <label for="mobile">Mobile No.:</label>
+        </td>
+        <td>
+          <input type="number" name="mobile" id="mobile" placeholder="Mobile Number">
+        </td>
+      </tr>
+
+      <!-- address -->
+      <tr>
+        <td rowspan="3">
+          <label for="add1">Pateint's Address:</label>
+        </td>
+        <td colspan="2">
+          <input type="text" name="street" id="add1" size="48" placeholder="Sreet">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" name="city" id="add2" placeholder="City">
+        </td>
+        <td>
+          <input type="text" name="state" id="add3" placeholder="State">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="number" name="pincode" id="pin" placeholder="Pincode">
+        </td>
+        <td>
+          <select name="country" id="country">
+            <option>Country</option>
+            <option value="int">India</option>
+            <option value="aus">Australia</option>
+            <option value="nz">New Zealand</option>
+            <option value="rus">Russia</option>
+            <option value="eng">England</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- insurance -->
+      <tr>
+        <td>
+          <label for="ins">Insurance Name:</label>
+        </td>
+        <td>
+          <input type="text" name="ins" id="ins" placeholder="Insurance Name">
+        </td>
+      </tr>
+
+      <!-- past medical hitory -->
+      <tr>
+        <td>
+          <label for="pmh">Past Medical History:</label>
+        </td>
+        <td>
+          <input type="checkbox" name="pastmh" id="pmh-ch1" value="ane"><label for="pmh-ch1">Anemia</label><br>
+          <input type="checkbox" name="pastmh" id="pmh-ch2" value="ast"><label for="pmh-ch2">Asthma</label><br>
+          <input type="checkbox" name="pastmh" id="pmh-ch3" value="bro"><label for="pmh-ch3">Bronchitis</label><br>
+          <input type="checkbox" name="pastmh" id="pmh-ch4" value="chi"><label for="pmh-ch4">Chickenpox</label><br>
+          <input type="checkbox" name="pastmh" id="pmh-ch5" value="dia"><label for="pmh-ch5">Diabetes</label><br>
+          <input type="checkbox" name="pastmh" id="pmh-ch6" value="pne"><label for="pmh-ch6">Pneumonia</label><br>
+          <input type="checkbox" name="pastmh" id="pmh-ch7" value="thy"><label for="pmh-ch7">Thyroid Disease</label><br>
+          <input type="checkbox" name="pastmh" id="pmh-ch8" value="ulc"><label for="pmh-ch8">Ulcer</label><br>
+          <input type="checkbox" name="pastmh" id="pmh-ch9" value="other"><label for="pmh-ch9">Other:</label>
+        </td>
+      </tr>
+
+      <!-- password -->
+      <tr>
+        <td>
+          <label for="pass">Password:</label>
+        </td>
+        <td>
+          <input type="password" name="pass" id="pass" placeholder="Password">
+        </td>
+      </tr>
+
+      <!-- confirm password -->
+      <tr>
+        <td>
+          <label for="pass2">Confirm Password:</label>
+        </td>
+        <td>
+          <input type="password" name="pass2" id="pass2" placeholder="Confirm Password">
+        </td>
+      </tr>
+
+      <tr><td></td></tr>
+        
+      <!-- buttons -->
+      <tr>
+        <td colspan="3" align="center">
+          <input type="submit" value="  Register  ">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="reset" value="   Clear    ">
+        </td>
+      </tr>
+
+      <tr><td></td></tr>
+
+      <!-- login link -->
+      <tr>
+        <td colspan="3" align="center">
+          Already Registered? <a href="psignin.html">Click Here To Login</a>
+        </td>
+      </tr>
+
+    </table>
+    <!-- table end -->
+  </form>
+  <!-- form end -->
+
+  <br><br>
+  <hr>
+
+  <!-- footer -->
+  <footer align="center">
+    <font color="sky-blue">
+      <b>copyright@360Digrii</b>
+    </font>
+  </footer>
+
+</body>
+
+</html>
